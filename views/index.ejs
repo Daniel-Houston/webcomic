@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+		<a href="/0">First</a>
+		<a href="/<%= image.prev %>">Previous</a>
+		<a href="/<%= image.next %>">Next</a>
+		<a href="/">Latest</a>
+		<img src="/comics/<%= image.name %>" />
+  </body>
+</html>
