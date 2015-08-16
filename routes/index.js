@@ -7,9 +7,10 @@ router.get('/', function(req, res, next) {
 		id:4,
 		name:'rough_day.jpeg',
 		next:4,
-	  prev:3,
+	  	prev:3,
+	  	alt: "Web Comic Alt Text"
 	};
-  res.render('index', { title: 'Webcomic Home', image:image });
+  res.render('index', { title: 'Webcomic Title', image:image });
 
 });
 
@@ -22,7 +23,8 @@ router.get('/:id(\\d+)', function(req, res, next) {
 		id:id,
 		name:imgNames[id],
 		next:id + 1,
-	  prev:id - 1,
+	  	prev:id - 1,
+	  	alt:"Web Comic alt-text"
 	};
   res.render('index', { title: 'Webcomic Home', image:image });
 });

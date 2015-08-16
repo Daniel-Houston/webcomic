@@ -2,14 +2,32 @@
 <html>
   <head>
     <title><%= title %></title>
+    <!-- <link rel='stylesheet' href='/stylesheets/reset.css' /> -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-		<a href="/0">First</a>
-		<a href="/<%= image.prev %>">Previous</a>
-		<a href="/<%= image.next %>">Next</a>
-		<a href="/">Latest</a>
-		<img src="/comics/<%= image.name %>" />
+    <div class="main-panel">
+      <h1 class="comic-title"><%= title %></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/0">First</a>
+          </li>
+          <li>
+            <a href="/<%= image.prev %>">Previous</a>
+          </li>
+          <li>
+            <a href="/<%= image.next %>">Next</a>    
+          </li>
+          <li>
+            <a href="/">Latest</a>  
+          </li>
+        </ul>
+      </nav>
+      <div class="comic-panel">
+        <img src="/comics/<%= image.name %>" alt="<%= image.alt %>"/>  
+      </div>
+    </div>
+    
   </body>
 </html>

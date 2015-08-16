@@ -1,8 +1,139 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Style Design is 'Mobile First', meaning that the styles
+   have been designed for mobile, and then the media queries
+   account for larger screen sizes. For more information see
+   www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+
+/* For Mobile */
+* {
+  	font-family:"Lucida Grande", Helvetica, Arial, sans-serif;		
+  	box-sizing:border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+	width:100%;
+	max-width:960px;
+	margin:0 auto;
+  	background-color:#81E3D1;
+}
+
+div.main-panel {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFCC;
+	padding:15px;
+}
+
+h1.comic-title {
+	text-align:center;
+}
+
+/* Navigation Styling */
+
+nav {
+	margin:20px auto;
+}
+
+nav ul {
+	list-style: none;
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display:block;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color:#9999FF;
+	border: 5px solid #81E3D1;
+	border-top:0px;
+}
+
+
+nav ul li:first-child a {
+	border-top:5px solid #81E3D1;
+}
+
+nav a, nav a:visited{
+	color:#0B0080
+}
+
+/* Comic Styling */
+div.comic-panel {
+	background-color: #F5F5F5;
+}
+
+img.comic-img {
+	width:100%;
+	height:auto;
+}
+
+/* For Tablets */
+@media only screen and (min-width: 600px) and (max-width:767px) {
+	body {
+		padding-top:20px;
+	}
+
+	div.main-panel {
+		width:80%;
+	}
+
+	nav {
+		width:75%;
+	}
+
+	nav ul li {
+		width:50%;
+		float:left;
+	}	
+
+	nav ul li a {
+		border: 5px solid #81E3D1;
+	}
+
+	nav ul li:first-child a {
+		border-right:0px;
+	}
+
+	nav ul li:nth-child(3) a{
+		border-top:0px;
+		border-right:0px;
+	}
+
+	nav ul li:last-child a{
+		border-top:0px;
+	}
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+	body {
+		padding-top:20px;
+	}
+
+	div.main-panel {
+		width:80%;
+	}
+
+	nav {
+		width:75%;
+	}
+
+	nav ul li {
+		width:25%;
+		float:left;
+	}	
+
+	nav ul li a {
+		border: 5px solid #81E3D1;
+		border-left:0px;
+	}
+
+	nav ul li:first-child a {
+		border-left:5px solid #81E3D1;
+	}
 }
