@@ -28,50 +28,6 @@ h1.comic-title {
 	text-align:center;
 }
 
-/* Navigation Styling */
-
-nav {
-	margin:20px auto;
-}
-
-nav ul {
-	list-style: none;
-	width:100%;
-	margin:0;
-	padding:0;
-	overflow: hidden;
-}
-
-nav ul li a {
-	display:block;
-	text-align:center;
-	padding:10px 0px 10px 0px;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color:#9999FF;
-	border: 5px solid #81E3D1;
-	border-top:0px;
-}
-
-
-nav ul li:first-child a {
-	border-top:5px solid #81E3D1;
-}
-
-nav a, nav a:visited{
-	color:#0B0080
-}
-
-/* Comic Styling */
-div.comic-panel {
-	background-color: #F5F5F5;
-}
-
-img.comic-img {
-	width:100%;
-	height:auto;
-}
-
 /* For Tablets */
 @media only screen and (min-width: 600px) and (max-width:767px) {
 	body {
@@ -80,32 +36,6 @@ img.comic-img {
 
 	div.main-panel {
 		width:80%;
-	}
-
-	nav {
-		width:75%;
-	}
-
-	nav ul li {
-		width:50%;
-		float:left;
-	}	
-
-	nav ul li a {
-		border: 5px solid #81E3D1;
-	}
-
-	nav ul li:first-child a {
-		border-right:0px;
-	}
-
-	nav ul li:nth-child(3) a{
-		border-top:0px;
-		border-right:0px;
-	}
-
-	nav ul li:last-child a{
-		border-top:0px;
 	}
 }
 
@@ -117,23 +47,5 @@ img.comic-img {
 
 	div.main-panel {
 		width:80%;
-	}
-
-	nav {
-		width:75%;
-	}
-
-	nav ul li {
-		width:25%;
-		float:left;
-	}	
-
-	nav ul li a {
-		border: 5px solid #81E3D1;
-		border-left:0px;
-	}
-
-	nav ul li:first-child a {
-		border-left:5px solid #81E3D1;
 	}
 }

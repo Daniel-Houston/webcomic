@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/admin.css' />
+  </head>
+  <body>
+    <div class="main-panel">
+      <h1 class="comic-title"><%= title %></h1>
+      <div class="add-comic-panel">
+        <form action="/admin/add_comic" method="post" name="add-comic-form">
+          <!-- <label for="comic_name">Name</label> -->
+          <div>
+            <input type="text" name="comic_name" placeholder="Name"/>
+          </div>  
+          <!-- <label for="comic_alt_text">Alt Text</label> -->
+          <div>
+            <input type="text" name="comic_alt_text" placeholder="Alt Text"/>
+          </div>
+          <!-- <label for="comic_file">Select Comic</label> -->
+          <div>
+            <input type="file" name="comic_file" placeholder="Select Comic"/>
+          </div>
+          <input type="submit" title="Submit"/>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
